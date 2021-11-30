@@ -24,7 +24,6 @@ export function Pagination({ totalCountOfRegisters, registersPerPage = 10, curre
     const previousPages = currentPage > 1 ? generatePageArray(currentPage - 1 - siblingCount, currentPage - 1) : []
 
     const nextPages = currentPage < lastPage ? generatePageArray(currentPage, Math.min(currentPage + siblingCount, lastPage)) : []
-    console.log(currentPage);
 
     return (
         <Stack direction={["column", "row"]} mt="8" align="center" justify="space-between" spacing="6">
